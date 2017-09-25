@@ -1,0 +1,11 @@
+{{include "header"}}
+        {{include "nav"}}
+        
+        <!--上传头像表单-->
+		<form action="/user/upload" method="post" enctype="multipart/form-data">
+			<div class="form-group">
+				<input type="file" name="photo" id="photo" value="" accept=".jpeg,.png" autocomplete="off"/>
+			</div>
+			<input type="submit" class="btn btn-success form-control" value="Upload" />
+		</form>
+    {{include "footer"}}
